@@ -212,7 +212,7 @@ def warning_box(texto):
 
 @st.cache_data
 def cargar_datos():
-    df = pd.read_csv("licencias_limpias.csv", low_memory=False, encoding="utf-8-sig")
+    df = pd.read_csv("licencias_limpias_streamlit.csv", low_memory=False, encoding="utf-8-sig")
     df.columns = df.columns.str.strip()
 
     columnas_numericas = [
@@ -1142,3 +1142,5 @@ elif menu == "Exploración con PyGWalker":
 
 st.sidebar.divider()
 st.sidebar.markdown("Proyecto Licencias Médicas")
+st.sidebar.markdown("Ingeniería en Información y Control de Gestión")
+st.sidebar.markdown("Universidad Santo Tomás")
